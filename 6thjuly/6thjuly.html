@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login and Image Upload</title>
+    <style>
+        #imageDisplay {
+            max-width: 100%;
+            height: auto;
+            display: none;
+            border-radius: 50%;
+            object-fit: cover;
+            width: 100px;
+            height: 100px;
+        }
+        .user-card {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 10px;
+        }
+        .user-card img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>User Login</h1>
+    <form id="userForm">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" required><br>
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" required><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" required><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" required><br>
+        <label for="fileInput">Upload Image:</label>
+        <input type="file" id="fileInput" accept="image/*"><br>
+        <button type="button" id="addButton">Add</button>
+    </form>
+    <h2>Stored User Data:</h2>
+    <div id="userData"></div>
+    <script src="6thjuly.js"></script>
+</body></html>
